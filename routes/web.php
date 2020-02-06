@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', "DashboardController@view");
+Route::get('show-data', 'HomeController@index');
+Route::get('input-data', 'HomeController@create');
 
+Route::get('show-data', 'HomeController@index');
+
+Route::get('show-data','HomeController@index');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
