@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+use App\Siswa;
 
 class TabelSiswaSeeder extends Seeder
 {
@@ -19,5 +21,7 @@ class TabelSiswaSeeder extends Seeder
     //     	'alamat' => str_random(50),
     //     	'gambar' => 'a.jpg'
         // ]);
+
+        factory(\App\Siswa::class, 5)->create();
     }
 }
