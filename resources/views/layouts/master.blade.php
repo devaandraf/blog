@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Dashboard | Klorofil - Free Bootstrap Dashboard Template</title>
+	<title>LakeVille Area School</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -17,8 +17,8 @@
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="{{url('template/img/apple-icon.png')}}">
-	<link rel="icon" type="image/png" sizes="96x96" href="{{url('template/img/favicon.png')}}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{url('template/img/lakeville.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{url('template/img/lakeville.png')}}">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
-				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+				
 			</div>
 		</footer>
 	</div>

@@ -28,24 +28,20 @@
 												<th>JENIS KELAMIN</th>
 												<th>AGAMA</th>
 												<th>ALAMAT</th>
-												<th>FOTO</th>
 												<th>AKSI</th>
 											</tr>
 										</thead>
 										<tbody>
 											@foreach($data_siswa as $siswa)
 											<tr>
-												<td>{{$siswa->nama_depan}}</td>
-												<td>{{$siswa->nama_belakang}}</td>
+												<td><a href="/siswa/{{$siswa->id}}/profile">{{$siswa->nama_depan}}</a></td>
+												<td><a href="/siswa/{{$siswa->id}}/profile">{{$siswa->nama_belakang}}</a></td>
 												<td>{{$siswa->jenis_kelamin}}</td>
 												<td>{{$siswa->agama}}</td>
 												<td>{{$siswa->alamat}}</td>
 												<td>
-													<img src="{{ url('img/'.$siswa->foto) }}" style="width: 90px;height: 90px;object-fit: cover;">
-												</td>
-												<td>
-													<a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">edit</a>
-													<a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-sm">delete</a>	
+													<a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">EDIT</a>
+													<a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-sm">DELETE</a>	
 												</td>
 											</tr>
 											@endforeach
@@ -64,7 +60,7 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">	
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <h5 class="modal-title" id="exampleModalLabel">Tambah Data Siswa</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
@@ -80,6 +76,12 @@
 				    <label for="exampleInputEmail1">Nama Belakang</label>
 				    <input name="nama_belakang" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Belakang">
 				</div>
+
+				<div class="form-group">
+				    <label for="exampleInputEmail1">Email</label>
+				    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+
 				<div class="form-group">
 					<label for="exampleFormControlSelect1">Pilih Jenis Kelamin</label>
 					    <select name="jenis_kelamin" name="jenis_kelamin" class="form-control" id="exampleFormControlSelect1">
@@ -89,16 +91,16 @@
 				</div>
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Agama</label>
-				    <input name="agama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="agama">
+				    <input name="agama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agama">
 				</div>
 				<div class="form-group">
 				    <label for="exampleFormControlTextarea1">Alamat</label>
 				    <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 				</div>
-				<div class="form-group">
-				    <label for="exampleFormControlTextarea1">Gambar</label>
+				<!-- <div class="form-group">
+				    <label for="exampleFormControlTextarea1">Foto</label>
 				    <input name="foto" type="file" class="form-control" id="exampleFormControlFile" rows="3"></input>
-				</div>
+				</div> -->
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

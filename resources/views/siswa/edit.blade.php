@@ -39,7 +39,7 @@
 				<div class="form-group">
 				    <label for="exampleFormControlTextarea1">Foto</label><br>
 				    <img src="{{ url('img/'.$siswa->foto) }}" style="width: 200px;">
-				    <input name="foto" type="file" class="form-control" id="exampleFormControlFile" accept=".jpg, .png, .jpeg" rows="3"></input>
+				    <input name="foto" type="file" class="form-control" accept=".jpg, .png, .jpeg" rows="3"></input>
 				</div>
 				<button type="submit" class="btn btn-warning">Update</button>
 		        </form>	
