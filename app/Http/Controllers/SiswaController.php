@@ -28,7 +28,7 @@ class SiswaController extends Controller
         $user->role = 'siswa';
         $user->name = $request->nama_depan;
         $user->email = $request->email;
-        $user->password = bcrypt('rahasia');
+        $user->password = bcrypt('user');
         $user->remember_token = \Str::random(60);
         $user->save();
 
